@@ -54,18 +54,18 @@
                 <a
                   class="nav-link active text-white"
                   aria-current="page"
-                  href="#"
+                  href="#biografia"
                   >Biografía</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Proyectos</a>
+                <a class="nav-link text-white" href="#proyectos">Proyectos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Formación</a>
+                <a class="nav-link text-white" href="#formaciones">Formación</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#">Contacto</a>
+                <a class="nav-link text-white" href="#contacto">Contacto</a>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@
       </nav>
     </header>
     <main>
-      <section class="biografia p-4">
+      <section id="biografia" class="biografia p-4">
         <div class="container text-white">
           <h2>Bienvenidos a mi portfolio</h2>
           <h4>
@@ -82,7 +82,7 @@
           </h4>
         </div>
       </section>
-      <section class="container proyectos p-4">
+      <section id="proyectos" class="container proyectos p-4">
         <h2 class="mb-4">Proyectos</h2>
         <div class="cont-proyectos">
           <div class="card" style="width: 18rem">
@@ -157,7 +157,7 @@
           </div>
         </div>
       </section>
-      <section class="formaciones p-4">
+      <section id="formaciones" class="formaciones p-4">
         <div class="container">
           <h2 class="mb-4">Formaciones</h2>
           <div class="container cont-formaciones">
@@ -222,11 +222,60 @@
               </div>
             </div>
             <div class="card" style="width: 18rem">
-              <img
+              <!-- <img
                 src="./assets/diploma.jpg"
                 class="card-img-top"
                 alt="imagen de diploma"
-              />
+              /> -->
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/pacheco.png"
+                      class="d-block w-100"
+                      alt="imagen de utn pacheco"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/uni.jpeg"
+                      class="d-block w-100"
+                      alt="foto de la universidad"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/cartel.jpg"
+                      class="d-block w-100"
+                      alt="foto del cartel de la universidad"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
               <div class="card-body">
                 <h5 class="card-title">Desarrollo web UTN</h5>
                 <p class="card-text">
